@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVVMDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZEN-fY-Ahp">
+                                <rect key="frame" x="0.0" y="115" width="414" height="781"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="h6U-cO-6qp">
+                                <rect key="frame" x="69.5" y="64" width="275" height="32"/>
+                                <segments>
+                                    <segment title="PersonViewModel"/>
+                                    <segment title="AddressViewModel"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControllAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="7ri-wZ-HD5"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h6U-cO-6qp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Apw-jh-rDA"/>
+                            <constraint firstItem="h6U-cO-6qp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OWi-1n-cRe"/>
+                            <constraint firstItem="ZEN-fY-Ahp" firstAttribute="top" secondItem="h6U-cO-6qp" secondAttribute="bottom" constant="20" id="VuX-zB-cGI"/>
+                            <constraint firstItem="ZEN-fY-Ahp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wvp-WK-01F"/>
+                            <constraint firstAttribute="bottom" secondItem="ZEN-fY-Ahp" secondAttribute="bottom" id="Xjt-87-C8h"/>
+                            <constraint firstAttribute="trailing" secondItem="ZEN-fY-Ahp" secondAttribute="trailing" id="yS7-vv-I5H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segmetControll" destination="h6U-cO-6qp" id="fcj-6E-Uf7"/>
+                        <outlet property="userTableView" destination="ZEN-fY-Ahp" id="06R-5J-9qe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
