@@ -14,3 +14,5 @@ It simply say that the plain structure of our data. Model does not know the busi
 
 ## ViewModel
 - The responsibility of ViewModel to interact both View and Model. It knows the business logic.  
+
+<img width="777" alt="Screenshot 2022-09-03 at 12 03 42 PM" src="https://user-images.githubusercontent.com/29371886/188258158-d7ab0e3b-e642-41e4-83ee-210b27c05fb2.png">
