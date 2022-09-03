@@ -5,11 +5,9 @@
 
 ## Model
 It simply say that the plain structure of our data. Model does not know the business logic. 
-`
+
 struct PersonModel: Codable{
-    
     var name: String
     var username: String
     var email: String
 }
-`
