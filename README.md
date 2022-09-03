@@ -11,3 +11,6 @@ It simply say that the plain structure of our data. Model does not know the busi
 ## View
 - All the user interface component are lie in View.
 - View only perform the user interaction and update based on action from users. 
+
+## ViewModel
+- The responsibility of ViewModel to interact both View and Model. It knows the business logic.  
