@@ -6,8 +6,14 @@
 ## Model
 It simply say that the plain structure of our data. Model does not know the business logic. 
 
+
+import Foundation
 struct PersonModel: Codable{
+    
     var name: String
     var username: String
     var email: String
+}
+func openclose(){
+    print("")
 }
