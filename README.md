@@ -9,7 +9,6 @@ It simply say that the plain structure of our data. Model does not know the busi
 
 import Foundation
 struct PersonModel: Codable{
-    
     var name: String
     var username: String
     var email: String
